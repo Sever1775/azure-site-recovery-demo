@@ -32,12 +32,6 @@
                 "description": "The name of the region where the VM resources are deployed to"
             }
         },
-        "recoveryAz": {
-            "type": "string",
-            "metadata": {
-                "description": "The availability zone to recovery to"
-            }
-        },
         "recoverySubnet": {
             "type": "string",
             "metadata": {
@@ -134,7 +128,6 @@
                     "instanceType": "A2A",
                     "recoveryAzureVMName": "[parameters('vmName')]",
                     "fabricObjectId": "[parameters('vmResourceId')]",
-                    "recoveryAvailabilityZone": "[parameters('recoveryAz')]",
                     "recoveryContainerId": "[parameters('replicationContainerDstId')]",
                     "recoveryResourceGroupId": "[concat(parameters('subscriptionIdRecovery'),'/resourceGroups/',parameters('resourceGroupRecoveryName'))]",
                     "recoverySubnetName": "[parameters('recoverySubnet')]",
