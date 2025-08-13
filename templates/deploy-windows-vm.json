@@ -14,12 +14,6 @@
                 "description": "Name of the administrator account created on the VM"
             }
         },
-        "availabilityZone": {
-            "type": "string",
-            "metadata": {
-                "description": "The number of the availability zone to deploy to"
-            }
-        },
         "linkedTemplateLocation": {
             "type": "string",
             "metadata": {
@@ -193,9 +187,6 @@
                     }
                 }
             },
-            "zones": [
-                "[parameters('availabilityZone')]"
-            ],
             "resources": [
                 {
                     "type": "extensions",
