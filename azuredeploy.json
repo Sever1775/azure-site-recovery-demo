@@ -12,6 +12,7 @@
                 "eastus",
                 "eastus2",
                 "southcentralus",
+                "westus",
                 "westus2",
                 "westcentralus"
             ]
@@ -24,6 +25,7 @@
             "allowedValues": [
                 "centralus",
                 "eastus",
+                "westus",
                 "eastus2",
                 "southcentralus",
                 "westus2",
